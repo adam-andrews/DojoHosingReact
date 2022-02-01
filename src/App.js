@@ -1,12 +1,26 @@
 import Header from "./components/Header";
 import "./App.css";
+import "./utilities.css";
+// images
+import Node from "./images/logos/node.png"
+import Python from "./images/logos/python.png"
+import Csharp from "./images/logos/csharp.png"
+import Ruby from "./images/logos/ruby.png"
+import Php from "./images/logos/php.png"
+import Scala from "./images/logos/scala.png"
+import Clojure from "./images/logos/clojure.png"
+import Cloud from "./images/cloud.png"
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo">Dojo Hosting.</h1>
+      <div className="navbar">
+        <div className="container flex">
+            <h1 className="logo">Dojo Hosting.</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -18,144 +32,128 @@ function App() {
     </div>
     
     {/* <!-- Showcase --> */}
-    <section class="showcase">
-        <div class="container grid">
-            <div class="showcase-text">
+    <section className="showcase">
+        <div className="container grid">
+            <div className="showcase-text">
                 <h1>Easier Deployment</h1>
                 <p>Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals. Fill out the form to try a demo of our platform</p>
-                <a href="features.html" class="btn btn-outline">Read More</a>
+                <a href="features.html" className="btn btn-outline">Read More</a>
             </div>
 
-            <div class="showcase-form card">
+            <div className="showcase-form card">
                 <h2>Request a Demo</h2>
-                 <form name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true" >
-                    <input type="hidden" name="form-name" value="contact"/>
-                    <p class="hidden">
-                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                      </p>
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required/>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="company" placeholder="Company Name" required/>
-                    </div>
-                    <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required/>
-                    </div>
-                    <input type="submit" value="Send" class="btn btn-primary"/>
-                </form> 
                  <form>
-                    <div class="form-control">
+                    <div className="form-control">
                         <input type="text" name="name" placeholder="Name" required />
                     </div>
-                    <div class="form-control">
+                    <div className="form-control">
                         <input type="text" name="company" placeholder="Company Name" required />
                     </div>
-                    <div class="form-control">
+                    <div className="form-control">
                         <input type="email" name="email" placeholder="Email" required />
                     </div>
-                    <input type="submit" value="Send" class="btn btn-primary" />
+                    <input type="submit" value="Send" className="btn btn-primary" />
                 </form>
             </div>
         </div>
     </section>
 
     {/* <!-- Stats --> */}
-    <section class="stats">
-        <div class="container">
-            <h3 class="stats-heading text-center my-1">
+    <section className="stats">
+        <div className="container">
+            <h3 className="stats-heading text-center my-1">
                 Welcome to the best platform for building applications of all types with modern architecture and scaling
             </h3>
 
-            <div class="grid grid-3 text-center my-4">
+            <div className="grid grid-3 text-center my-4">
                 <div>
-                    <i class="fas fa-server fa-3x"></i>
+                    <i className="fas fa-server fa-3x"></i>
                     <h3>10,349,405</h3>
-                    <p class="text-secondary">Deployments</p>
+                    <p className="text-secondary">Deployments</p>
                 </div>
                 <div>
-                    <i class="fas fa-upload fa-3x"></i>
+                    <i className="fas fa-upload fa-3x"></i>
                     <h3>987 TB</h3>
-                    <p class="text-secondary">Published</p>
+                    <p className="text-secondary">Published</p>
                 </div>
                 <div>
-                    <i class="fas fa-project-diagram fa-3x"></i>
+                    <i className="fas fa-project-diagram fa-3x"></i>
                     <h3>2,343,265</h3>
-                    <p class="text-secondary">Projects</p>
+                    <p className="text-secondary">Projects</p>
                 </div>
             </div>
         </div>
     </section>
 
     {/* <!-- Cli --> */}
-    <section class="cli">
-        <div class="container grid">
-            <img src="images/cli.png" alt=""/>
-            <div class="card">
+    <section className="cli">
+        <div className="container grid">
+            <img src="./images/cli.png" alt=""/>
+            <div className="card">
                 <h3>Easy to use, cross platform CLI</h3>
             </div>
-            <div class="card">
+            <div className="card">
                 <h3>Deploy in seconds</h3>
             </div>
         </div>
     </section>
 
     {/* <!-- Cloud --> */}
-    <section class="cloud bg-primary my-2 py-2">
-        <div class="container grid">
-            <div class="text-center">
-                <h2 class="lg">Extreme Cloud Hosting</h2>
-                <p class="lead my-1">Cloud hosting like you've never seen. Fast, efficient and scalable</p>
-                <a href="features.html" class="btn btn-dark">Read More</a>
+    <section className="cloud bg-primary my-2 py-2">
+        <div className="container grid">
+            <div className="text-center">
+                <h2 className="lg">Extreme Cloud Hosting</h2>
+                <p className="lead my-1">Cloud hosting like you've never seen. Fast, efficient and scalable</p>
+                <a href="features.html" className="btn btn-dark">Read More</a>
             </div>
-            <img src="images/cloud.png" alt="" />
+            <img src={Cloud} alt="" />
         </div>
     </section>
 
     {/* <!-- Languages --> */}
-    <section class="languages">
-        <h2 class="md text-center my-2">
+    <section className="languages">
+        <h2 className="md text-center my-2">
             Supported Languages
         </h2>
-        <div class="container flex">
-            <div class="card">
+        <div className="container flex">
+            <div className="card">
                 <h4>Node.js</h4>
-                <img src="images/logos/node.png" alt="" />
+                <img src={Node} alt="" />
             </div>
-            <div class="card">
+            <div className="card">
                 <h4>Python</h4>
-                <img src="images/logos/python.png" alt="" />
+                <img src={Python} alt="" />
               </div>
-              <div class="card">
+              <div className="card">
                 <h4>C#</h4>
-                <img src="images/logos/csharp.png" alt="" />
+                <img src={Csharp} alt="" />
               </div>
-              <div class="card">
+              <div className="card">
                 <h4>Ruby</h4>
-                <img src="images/logos/ruby.png" alt="" />
+                <img src={Ruby} alt="" />
               </div>
-              <div class="card">
+              <div className="card">
                 <h4>PHP</h4>
-                <img src="images/logos/php.png" alt="" />
+                <img src={Php} alt="" />
               </div>
-              <div class="card">
+              <div className="card">
                 <h4>Scala</h4>
-                <img src="images/logos/scala.png" alt=""/>
+                <img src={Scala} alt=""/>
               </div>
-              <div class="card">
+              <div className="card">
                 <h4>Clojure</h4>
-                <img src="images/logos/clojure.png" alt=""/>
+                <img src={Clojure} alt=""/>
               </div>
         </div>
     </section>
 
     {/* <!-- Footer --> */}
-    <footer class="footer bg-dark py-5">
-        <div class="container grid grid-3">
+    <footer className="footer bg-dark py-5">
+        <div className="container grid grid-3">
             <div>
                 <h1>Dojo hosting
                 </h1>
-                <p>Copyright &copy; 2020</p>
+                <p>Copyright &copy; 2022</p>
             </div>
             <nav>
                 <ul>
@@ -164,11 +162,11 @@ function App() {
                     <li><a href="docs.html">Docs</a></li>
                 </ul>
             </nav>
-            <div class="social">
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <div className="social">
+                <a href="#"><i className="fab fa-github fa-2x"></i></a>
+                <a href="#"><i className="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i className="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i className="fab fa-twitter fa-2x"></i></a>
             </div>
         </div>
     </footer>
