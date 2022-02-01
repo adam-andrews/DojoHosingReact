@@ -10,8 +10,15 @@ import Php from "./images/logos/php.png"
 import Scala from "./images/logos/scala.png"
 import Clojure from "./images/logos/clojure.png"
 import Cloud from "./images/cloud.png"
-
-
+//fa Stats
+import {FaServer} from "react-icons/fa";
+import {FaUpload} from "react-icons/fa";
+import {FaProjectDiagram} from "react-icons/fa";
+//fa Footer
+import {FaGithub} from "react-icons/fa";
+import {FaFacebook} from "react-icons/fa";
+import {FaInstagram} from "react-icons/fa";
+import {FaTwitter} from "react-icons/fa";
 
 
 
@@ -67,17 +74,17 @@ function App() {
 
             <div className="grid grid-3 text-center my-4">
                 <div>
-                    <i className="fas fa-server fa-3x"></i>
+                    <FaServer size ="4em" className="fas fa-3x"/>
                     <h3>10,349,405</h3>
                     <p className="text-secondary">Deployments</p>
                 </div>
                 <div>
-                    <i className="fas fa-upload fa-3x"></i>
+                <FaUpload size ="4em"/>
                     <h3>987 TB</h3>
                     <p className="text-secondary">Published</p>
                 </div>
                 <div>
-                    <i className="fas fa-project-diagram fa-3x"></i>
+                <FaProjectDiagram size ="4em"/>
                     <h3>2,343,265</h3>
                     <p className="text-secondary">Projects</p>
                 </div>
@@ -163,10 +170,10 @@ function App() {
                 </ul>
             </nav>
             <div className="social">
-                <a href="#"><i className="fab fa-github fa-2x"></i></a>
-                <a href="#"><i className="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i className="fab fa-instagram fa-2x"></i></a>
-                <a href="#"><i className="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><FaGithub size ="2em" className="fas fa-3x"/></a>
+                <a href="#"><FaFacebook size ="2em" className="fas fa-3x"/></a>
+                <a href="#"><FaInstagram size ="2em" className="fas fa-3x"/></a>
+                <a href="#"><FaTwitter size ="2em" className="fas fa-3x"/></a>
             </div>
         </div>
     </footer>
