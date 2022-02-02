@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import './utilities.css';
+import '../App.css';
+import '../utilities.css';
 function Docs() {
 	return (
 		<div>

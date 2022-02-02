@@ -1,16 +1,16 @@
 import Header from '../components/Header';
-import './App.css';
-import './utilities.css';
+import '../App.css';
+import '../utilities.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 // images
-import Node from './images/logos/node.png';
-import Python from './images/logos/python.png';
-import Csharp from './images/logos/csharp.png';
-import Ruby from './images/logos/ruby.png';
-import Php from './images/logos/php.png';
-import Scala from './images/logos/scala.png';
-import Clojure from './images/logos/clojure.png';
-import Cloud from './images/cloud.png';
+import Node from '../images/logos/node.png';
+import Python from '../images/logos/python.png';
+import Csharp from '../images/logos/csharp.png';
+import Ruby from '../images/logos/ruby.png';
+import Php from '../images/logos/php.png';
+import Scala from '../images/logos/scala.png';
+import Clojure from '../images/logos/clojure.png';
+import Cloud from '../images/cloud.png';
 //fa Stats
 import { FaServer } from 'react-icons/fa';
 import { FaUpload } from 'react-icons/fa';

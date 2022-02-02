@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from "./Home"
-import Docs from "./Docs"
-import Features from './Features';
+import Home from "./pages/Home"
+import Docs from "./pages/Docs"
+import Features from './pages/Features';
 
 function App() {
 	return (

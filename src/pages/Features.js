@@ -1,5 +1,6 @@
 import React from 'react';
-
+import '../App.css';
+import '../utilities.css';
 function Features() {
 	return (
 		<div>
