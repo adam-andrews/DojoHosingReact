@@ -1,4 +1,4 @@
-import Header from './components/Header';
+import Header from '../components/Header';
 import './App.css';
 import './utilities.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -30,13 +30,13 @@ function App() {
 					<nav>
 						<ul>
 							<li>
-								<a href="index.html">Home</a>
+								<a href="/">Home</a>
 							</li>
 							<li>
-								<a href="features.html">Features</a>
+								<a href="features">Features</a>
 							</li>
 							<li>
-								<a href="docs.html">Docs</a>
+								<a href="docs">Docs</a>
 							</li>
 						</ul>
 					</nav>
@@ -182,14 +182,14 @@ function App() {
 					</div>
 					<nav>
 						<ul>
-							<li>
-								<a href="index.html">Home</a>
+						<li>
+								<a href="/">Home</a>
 							</li>
 							<li>
-								<a href="features.html">Features</a>
+								<a href="features">Features</a>
 							</li>
 							<li>
-								<a href="docs.html">Docs</a>
+								<a href="docs">Docs</a>
 							</li>
 						</ul>
 					</nav>
